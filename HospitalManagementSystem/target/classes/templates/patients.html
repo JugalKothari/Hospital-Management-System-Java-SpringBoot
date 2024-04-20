@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile - Hospital Swerisie</title>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .alert {
+            background-color: #f44336;
+            color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hospital Swerisie</h1>
+    </header>
+    <div >
+    <nav>
+        <a href="#">Home</a>
+        <a th:href="@{patients/myAppointments}" href="#">My Appointments</a>
+        <a th:href="@{/viewPrescription}" href="#">View Prescriptions</a>
+        <a th:href="@{patients/cancelAppointment}" href="#">Cancel Appointment</a>
+         
+    </nav>
+    </div>
+    <div class="container">
+        <h2>Welcome, <span th:text="${username}"></span>!</h2>
+        <form action="#" th:action="@{/logout}" method="post">
+            <input type="submit" value="Logout">
+        </form>
+        <hr>
+        <div class="alert" th:if="${message}" th:text="${message}"></div>
+        <p>Schedule your visit by booking an appointment: <a th:href="@{/add}" href="#">Book Appointment</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Hospital Swerisie. All rights reserved.</p>
+    </footer>
+</body>
+</html>
