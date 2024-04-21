@@ -39,7 +39,7 @@ public class receptionistController {
 		
 	}
 	
-	@GetMapping("#")
+	@GetMapping("/confirmm")
 	public String showConfirmm(Model model) {
 		appointment confirmation = new appointment();
 		model.addAttribute("confirmation",confirmation);

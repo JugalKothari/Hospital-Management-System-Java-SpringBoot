@@ -65,13 +65,9 @@ public class MainController {
 		Authentication authentication= SecurityContextHolder.getContext().getAuthentication();
 		String username= authentication.getName();
 		model.addAttribute("username",username);
-	
-	
 		return "receptionist";
 	}
-	
 
-	
 	
 	 @Autowired
 	 private appointmentService service;

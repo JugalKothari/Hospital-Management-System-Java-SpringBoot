@@ -68,5 +68,9 @@ public class invoice {
 		this.invoice = invoice;
 	}
 
+	public invoice() {
+		
+	}
+	
 	
 }
