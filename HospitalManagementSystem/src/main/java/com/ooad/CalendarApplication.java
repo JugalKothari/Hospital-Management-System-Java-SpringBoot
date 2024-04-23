@@ -1,4 +1,4 @@
-package com.company.varnaa;
+package com.ooad;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

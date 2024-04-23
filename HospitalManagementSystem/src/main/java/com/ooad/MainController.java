@@ -1,4 +1,4 @@
-package com.company.varnaa;
+package com.ooad;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -116,7 +116,7 @@ public class MainController {
 				RedirectAttributes redirectAttributes
 				) {
 			System.out.println(appointment);
-			//Optional<com.company.varnaa.appointment> x = service.get(appointment.getAppointment_id());
+			//Optional<com.ooad.appointment> x = service.get(appointment.getAppointment_id());
 		 String confirmation = "confirmed";
 		 Integer id = appointment.getAppointment_id();
 		 service.setConfirmation(confirmation, id);
