@@ -17,7 +17,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
           PasswordEncoderFactories.createDelegatingPasswordEncoder();
         auth
           .inMemoryAuthentication()
-          .withUser("varnaa")
+          .withUser("jugal")
           .password(encoder.encode("test123"))
           .roles("USER","PATIENT")
           .and()
@@ -25,7 +25,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
           .password(encoder.encode("test123"))
           .roles("USER", "RECEPTIONIST")
           .and()
-          .withUser("bijoy")
+          .withUser("kshitij")
           .password(encoder.encode("test123"))
           .roles("USER","DOCTOR")
           .and()
@@ -37,7 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
           .password(encoder.encode("test123"))
           .roles("USER","PATIENT")
           .and()
-          .withUser("varshaa")
+          .withUser("krish")
           .password(encoder.encode("test123"))
           .roles("USER","PATIENT")
           .and()

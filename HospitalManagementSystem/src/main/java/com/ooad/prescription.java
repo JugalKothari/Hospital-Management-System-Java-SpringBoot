@@ -52,7 +52,6 @@ public class prescription {
 	}
 
 	public prescription() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getPatientName() {
