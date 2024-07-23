@@ -3,7 +3,7 @@ As a part of Objected Oriented Analysis and Design using Java course, built a Ho
 Incorporated various features like Calendars, Appointment Scheduling, Prescription generation, Receptionist Login and Doctor's View.  
 
 # Project Report
-[Hospital_Management_System_OOADJ_Report.pdf] 
+[Hospital_Management_System_OOADJ_Report.pdf](https://github.com/JugalKothari/Hospital-Management-System-Java-SpringBoot/blob/main/Hospital_Management_System_OOADJ_Report.pdf)
 
 # How to use?
 First run the .sql file for setting up your database.
